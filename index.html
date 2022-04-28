@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div class="alert_box">
+        <span id="greeting"></span> <span id="name"></span>
+    </div> -->
+    <nav>
+        <div class="logo">
+            <div id="menuicon">
+                <img src="./images/icon-menu.svg" alt="" id="sidemenuBtn">
+            </div>
+            <div id="closeBtn">
+                <img src="./images/icon-close.svg" alt="">
+            </div>
+            <div>
+                <img src="./images/logo.svg" alt="" width="100px">
+            </div>
+        </div>
+        <div id="navLinks">
+            <div><a href="#">Collections</a></div>
+            <div><a href="#">Men</a></div>
+            <div><a href="#">Women</a></div>
+            <div><a href="#">About</a></div>
+            <div><a href="#">Contact</a></div>
+        </div>
+        <div class="user_info">
+            <div class="cart">
+                <img src="./images/icon-cart.svg" alt="">
+                <div id="cart_count"></div>
+            </div>
+            <div>
+                <img src="./images/image-avatar.png" width="30px" alt="">
+            </div>
+        </div>
+    </nav>
+    <div class="alert_box">
+        <span id="greeting"> </span> <span id="name"></span>
+    </div>
+    <div class="container">
+        <div class="inner_container">
+            <div class="container1">
+                <div class="showSlide fade">
+                    <img src="./images/image-product-1.jpg" alt="">
+                </div>
+                <div class="showSlide fade">
+                    <img src="./images/image-product-2.jpg" alt="">
+                </div>
+                <div class="showSlide fade">
+                    <img src="./images/image-product-3.jpg" alt="">
+                </div>
+                <div class="showSlide fade">
+                    <img src="./images/image-product-4.jpg" alt="">
+                </div>
+                <div class="slide_btn">
+                    <a class="left" onclick="nextSlide(-1)">❮</a>
+                    <a class="right" onclick="nextSlide(1)">❯</a>
+                </div>
+            </div>
+            <div class="images">
+                <img src="./images/image-product-1-thumbnail.jpg" alt="" class="thumbnail active">
+                <img src="./images/image-product-2-thumbnail.jpg" alt="" class="thumbnail">
+                <img src="./images/image-product-3-thumbnail.jpg" alt="" class="thumbnail">
+                <img src="./images/image-product-4-thumbnail.jpg" alt="" class="thumbnail">
+            </div>
+        </div>
+        <div class="wrapper">
+            <span>Sneaker Company</span>
+
+            <h2>Fall Limited Edition <br> Sneakers</h2>
+
+            <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
+                durable rubber outer sole,
+                they’ll withstand everything the weather can offer.</p>
+            <div class="price_rate">
+                <div class="discount">
+                    <h2>$125.00</h2>
+                    <span>50%</span>
+                </div>
+                <div class="fixed_price">
+                    <p><s>$250.00</s></p>
+                </div>
+            </div>
+            <div class="customer_cart">
+                <div class="itemCount">
+                    <div id="decrease" onclick="decrement()">
+                        <img src="./images/icon-minus.svg" alt="">
+                    </div>
+                    <div id="root"></div>
+                    <div id="increase" onclick="increment()">
+                        <img src="./images/icon-plus.svg" alt="">
+                    </div>
+                </div>
+                <div class="addBtn">
+                    <button id="add"><img src="./images/icon-cart.svg" alt=""> Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">PRINCEWILL SAMUEL.U</a>.
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
